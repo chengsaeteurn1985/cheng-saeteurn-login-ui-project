@@ -29,10 +29,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50vh;
+    max-height:500px;
+    min-height: 400px;
+    min-width: 300px;
+    max-width: 400px;
+    /*height: 50vh;
     min-height: 30rem;
     max-height: 40rem;
-    min-width: 500px;
+    min-width: 500px;*/
     height: 40%;
     /*background-color: aquamarine;*/
     background-color: #f7f7f7;
@@ -55,9 +59,21 @@ input {
     width: 50%;
     background-color: rgba(255, 255, 255, 1);
 }
+.remember-me {
+    display: flex;
+    align-self: center;
+}
 .login-button {
-    min-width: 260px;
-    
+    color:#f7f7f7;
+    font-family:'Courier New', Courier, monospace;
+    font-style: bold;
+    width: 54%;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: rgb(17, 26, 27);
+
 }
 /*
 h5 {
