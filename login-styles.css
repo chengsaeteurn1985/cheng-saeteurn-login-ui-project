@@ -1,23 +1,8 @@
-/*body{
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container{
-    height: 80vh;
-    width: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-style: solid;
-    border-radius: 25px;
-    box-shadow: 5px 10px #888888;
-    background-color: rgb(215, 249, 250);
-}*/
 
 .container {
     width: 100vw;
+    /*added max-width to remove horizontal scrollbar*/
+    max-width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -29,16 +14,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-height:500px;
-    min-height: 400px;
-    min-width: 300px;
+    max-height:400px;
+    min-height: 280px;
     max-width: 400px;
+    min-width: 300px;
+    width: 33%;
     /*height: 50vh;
     min-height: 30rem;
     max-height: 40rem;
     min-width: 500px;*/
-    height: 40%;
-    /*background-color: aquamarine;*/
+    height: 55%;
     background-color: #f7f7f7;
     border-style: solid;
     border-color: rgb(120, 123, 113, .1);
@@ -50,40 +35,47 @@ h1 {
     display: flex;
     justify-content: center;
 }
-input {
+/* the follow only affects input type with text and password but not checkbox */
+input[type=text], input[type=password] {
     display: flex;
     align-self: center;
     border: 0px;
     padding: 5px;
     border-bottom: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
     width: 50%;
     background-color: rgba(255, 255, 255, 1);
 }
-.remember-me {
-    display: flex;
-    align-self: center;
+.forgot-password, .remember, h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    padding-top: 5px;
 }
-.login-button {
+.remember {
+    font-family: 'Courier New', Courier, monospace;
+}
+a:hover {
+    color:royalblue;
+}
+
+.login-btn {
     color:#f7f7f7;
     font-family:'Courier New', Courier, monospace;
-    font-style: bold;
     width: 54%;
     margin-top: 25px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 0px;
-    background-color: rgb(17, 26, 27);
-
+    background-color: rgb(17, 26, 27, .45);
+    transition:  0.5s linear;  /*slowly transitions back after hovering*/
 }
-/*
-h5 {
-    display: flex;
-    justify-content: flex-end;
+/*changes the login button when hovering
+adds a drop shadow and transitions into scaling up*/
+.login-btn:hover {
+    background-color: rgba(84, 149, 84, 0.4);
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transform: scale(1.1);
+    transition: .5s;
 }
-/*
-.login{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: auto;
-}*/
