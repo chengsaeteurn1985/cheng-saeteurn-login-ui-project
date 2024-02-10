@@ -1,8 +1,14 @@
 
+/* added this body to remove horizontal and vertical scrolling */
+
+body{
+    margin: 0px;
+    height: 100vh;
+}
 .container {
     width: 100vw;
     /*added max-width to remove horizontal scrollbar*/
-    max-width: 100%;
+    /* max-width: 100%; */
     height: 100vh;
     display: flex;
     justify-content: center;
