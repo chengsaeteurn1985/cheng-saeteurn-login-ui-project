@@ -5,10 +5,11 @@ body{
     margin: 0px;
     height: 100vh;
 }
+
 .container {
     width: 100vw;
     /*added max-width to remove horizontal scrollbar*/
-    /* max-width: 100%; */
+    max-width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -25,21 +26,19 @@ body{
     max-width: 400px;
     min-width: 300px;
     width: 33%;
-    /*height: 50vh;
-    min-height: 30rem;
-    max-height: 40rem;
-    min-width: 500px;*/
     height: 55%;
     background-color: #f7f7f7;
     border-style: solid;
     border-color: rgb(120, 123, 113, .1);
     border-radius: 25px;
-    box-shadow: 2px 2px 2px 2px rgb(228, 225, 225);
+    box-shadow: 2px 2px 2px 2px #4e418742;
+
 }
 h1 {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
+    color: #4E4187;
 }
 /* the follow only affects input type with text and password but not checkbox */
 input[type=text], input[type=password] {
@@ -48,13 +47,19 @@ input[type=text], input[type=password] {
     border: 0px;
     padding: 5px;
     border-bottom: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
+    border-radius: 4px;
     width: 50%;
-    background-color: rgba(255, 255, 255, 1);
+    /* background-color: rgba(255, 255, 255, 1); */
+    background-color: #f7f7f7;
+}
+/*removes blue border*/
+input {
+    outline: none; 
 }
 .forgot-password, .remember, h4 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
+    font-weight: bold;
     padding-top: 5px;
 }
 .remember {
@@ -72,7 +77,8 @@ a:hover {
     padding: 10px;
     border-radius: 10px;
     border: 0px;
-    background-color: rgb(17, 26, 27, .45);
+    /* background-color: rgb(17, 26, 27, .45); */
+    background-color: #4E4187;
     transition:  0.5s linear;  /*slowly transitions back after hovering*/
 }
 /*changes the login button when hovering
